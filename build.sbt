@@ -17,14 +17,14 @@ lazy val root = (project in file("."))
     licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0")),
     scalaVersion := scala212,
     crossScalaVersions := supportedScalaVersions,
-    version      := "2.4-1.0.5",
+    version      := "3.0.1-1.0.5",
     libraryDependencies ++= Seq(
       "io.prometheus" % "simpleclient" % "0.8.1",
       "io.prometheus" % "simpleclient_dropwizard" % "0.8.1",
       "io.prometheus" % "simpleclient_pushgateway" % "0.8.1",
       "io.dropwizard.metrics" % "metrics-core" % "3.1.5",
       "io.prometheus.jmx" % "collector" % "0.12.0",
-      "org.apache.spark" %% "spark-core" % "2.4.4" % Provided,
+      "org.apache.spark" %% "spark-core" % "3.0.1" % Provided,
       "com.novocode" % "junit-interface" % "0.11" % Test,
       // Spark shaded jetty is not resolved in scala 2.11
       // Described in https://issues.apache.org/jira/browse/SPARK-18162?focusedCommentId=15818123#comment-15818123
